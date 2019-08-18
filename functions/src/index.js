@@ -55,7 +55,17 @@ function returnCounter(number=0) {
  Функция должна привязать переданные аргументы к функции F и вернуть получившуюся функцию
  */
 function bindFunction(fn) {
+    return fn.bind(arguments)
 }
+
+function testBinding() {
+    for (let i = 0; i < this.length; i++) {
+        console.log(this[i])
+    }
+}
+
+// console.log(bindFunction(testBinding, 1, 2)());
+
 
 export {
     returnFirstArgument,
