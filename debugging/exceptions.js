@@ -1,3 +1,5 @@
+// Error(message[, fileName[, lineNumber]]])
+
 function div(a, b) {
     if (b === 0) {
         throw new Error('dividing by zero')
